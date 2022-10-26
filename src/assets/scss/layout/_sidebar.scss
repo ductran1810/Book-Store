@@ -1,0 +1,53 @@
+.logo {
+  @include pxRem(padding, 10 40);
+  &-img {
+    @include pxRem(width, 100);
+    margin: 16px auto;
+  }
+}
+
+.ant-layout-sider-children {
+  box-shadow: 0 0 10px map-get($colors, gray);
+}
+
+.navbar {
+  min-height: 100%;
+  background-color: map-get($colors, white);
+  &-menu {
+    background-color: map-get($colors, white);
+  }
+}
+
+.ant-menu-inline.ant-menu-root .ant-menu-item {
+  &:after {
+    border-right: none;
+  }
+  span a {
+    &:hover {
+      color: map-get($colors, white);
+    }
+  }
+  &:hover {
+    color: map-get($colors, white);
+    background-color: map-get($colors, primary-bg);
+  }
+}
+.ant-menu-inline {
+  border-right: none;
+}
+.ant-menu-title-content a {
+  color: map-get($colors, black);
+}
+.ant-menu-item {
+  color: map-get($colors, black);
+  &:hover {
+    color: map-get($colors, white);
+  }
+}
+.sidebar-item .active {
+  background-color: map-get($colors, primary-bg);
+  color: map-get($colors, white);
+  a {
+    color: map-get($colors, white);
+  }
+}

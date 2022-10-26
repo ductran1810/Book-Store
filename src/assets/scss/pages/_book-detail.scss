@@ -1,0 +1,46 @@
+.book-title {
+  margin-top: 16px;
+  margin-left: 20px;
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+.back-item > svg {
+  margin-top: 22px;
+}
+
+.book-view{
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  .book-img{
+    width: 400px;
+    img{
+      height: 380px;
+      border-radius: 12px;
+      display: flex;
+      justify-content: flex-end;
+    }
+    margin-right: 60px;
+  }
+  .book-desc{
+    width: 400px;
+    margin-left: 60px;
+    h4{
+      font-size: 32px;
+    }
+    p{
+      font-size:20px;
+      margin-top: 16px;
+    }
+    span{
+      font-size: 24px;
+      color: map-get($colors, txt-gray);
+      margin-left: 10px;
+      font-style: normal;
+    }
+    .book-price{
+      font-size: 40px;
+      color: map-get($colors, primary-bg);
+    }
+  }
+}

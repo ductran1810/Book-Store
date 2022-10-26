@@ -1,0 +1,46 @@
+.login-form {
+  margin-top: 140px;
+  position: relative;
+  .form-login {
+    @include pxRem(width, 450);
+    @include pxRem(border-radius, 10);
+    @include pxRem(padding, 30 70);
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid map-get($colors, black);
+    background-color: map-get($colors, white);
+    box-shadow: 0 4px 0 4px map-get($colors, primary-shadow);
+    .login-title {
+      @include pxRem(margin-bottom, 20);
+      color: map-get($colors, black);
+    }
+    button {
+      background-color: map-get($colors, black);
+      border: 1px solid map-get($colors, black);
+      &:hover {
+        background-color: map-get($colors, white);
+        color: map-get($colors, black);
+      }
+    }
+  }
+}
+.login-back {
+  position: absolute;
+  top: -80px;
+  left: 80px;
+}
+.form-login-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  input {
+    border-radius: 4px;
+    margin-left: 10px;
+    width: 280px;
+    padding: 4px 10px;
+    outline: none;
+    border: 1px solid;
+  }
+}

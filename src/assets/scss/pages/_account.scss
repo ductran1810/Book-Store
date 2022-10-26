@@ -1,0 +1,28 @@
+.account-page{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  .user-info{
+    width: 300px;
+    margin-right: 80px;
+  }
+  h5{
+    color: map-get($colors, black);
+    font-size: 20px;
+    text-align: center;
+  }
+  .user-img{
+    width: 100%;
+    border-radius: 50%;
+    height: auto;
+  }
+  .btn-log{
+    width: 160px;
+    background-color: map-get($colors, primary-bg);
+    span{
+      margin-left: 8px;
+    }
+  }
+}

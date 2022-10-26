@@ -1,0 +1,38 @@
+.tags-input-container {
+  display: flex;
+  align-items: center;
+  width: inherit;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 5px;
+  border-radius: 4px;
+  margin-top: 10px;
+  .tags-item {
+    background-color: rgb(218, 216, 216);
+    display: inline-block;
+    padding: 5px 8px;
+    border-radius: 20px;
+    .tags-close {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5px;
+      height: 18px;
+      width: 18px;
+      border-radius: 50%;
+      font-size: 16px;
+      background-color: rgb(48, 48, 48);
+      color: map-get($colors, white);
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+      }
+    }
+  }
+  .tags-input {
+    flex-grow: 1;
+    padding: 5px 0;
+    border: none;
+    outline: none;
+  }
+}

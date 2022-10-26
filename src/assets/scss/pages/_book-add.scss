@@ -1,0 +1,7 @@
+.book-add > form {
+  width: 500px;
+  padding: 16px 0;
+  border-radius: 10px;
+  margin: 20px auto;
+  box-shadow: 0 0 5px map-get($colors, gray);
+}

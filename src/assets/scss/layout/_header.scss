@@ -1,0 +1,64 @@
+.ant-layout-header {
+  @include pxRem(height, 80);
+  background-color: map-get($colors, bg-header);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  .nav-item {
+    @include pxRem(font-size, 26);
+    @include pxRem(margin, 0 14);
+    position: relative;
+    &:hover {
+      opacity: .8;
+    }
+  }
+  a {
+    color: map-get($colors, white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .basket-icon {
+    color: map-get($colors, white);
+  }
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 12px;
+    right: -8px;
+    width: 22px;
+    height: 22px;
+    background-color: map-get($colors, primary-bg);
+    border-radius: 50%;
+    color: map-get($colors, white);
+    font-size: 18px;
+  }
+  .avatar-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .avatar-img {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+    }
+    h4 {
+      color: map-get($colors, white);
+      font-size: 14px;
+      margin-left: 10px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
